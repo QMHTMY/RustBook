@@ -1,4 +1,4 @@
-### Description  [[中文](./README_CN.md)] 
+### Description  [[简体中文](./README_CN.md),[繁體中文](./README_TW.md)] 
 
 A little book about Rust programming language in which are some data structures and algorithms plus some practice demos. This book contains 9 chapters.
 
