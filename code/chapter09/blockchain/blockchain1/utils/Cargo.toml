@@ -1,0 +1,12 @@
+[package]
+name = "utils"
+version = "0.1.0"
+authors = ["Shieber <QMH_XB_FLTMY@yahoo.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde   = { version = "1.0.123", features = ["derive"] }
+bincode = { version = "1.3.1" }
+rust-crypto = { version = "0.2.36" }

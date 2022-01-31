@@ -1,0 +1,23 @@
+[package]
+name = "cuckoofilter"
+version = "0.0.1"
+authors = ["Shieber <QMH_XB_FLTMY@yahoo.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+byteorder = "1.4.3"
+rand = "0.8.3"
+serde = {version = "1.0.125", optional = true}
+serde_derive = {version = "1.0.125", optional = true}
+serde_bytes = {version = "0.11.5", optional = true}
+farmhash = {version = "1.1.5", optional = true}
+fnv = "1.0.7"
+
+[dev-dependencies]
+serde_json = "1.0.64"
+
+[features]
+default = []
+serde_support = ["serde", "serde_derive", "serde_bytes"]
