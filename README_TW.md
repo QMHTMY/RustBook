@@ -23,6 +23,7 @@
     - 一致性哈希、Base58編碼、區塊鏈 
 
 ### 更新日誌
+* 2022-02-06 更改代碼字體為等寬字體：[Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
 * 2022-02-02 更新到 Rust 1.58 版
 * 2022-01-31 上傳代碼及最終文稿
 * 2021-04-24 上傳初始文稿
