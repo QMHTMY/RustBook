@@ -1,6 +1,6 @@
 ### Description  [[简体中文](./README_CN.md),[繁體中文](./README_TW.md)] 
 
-A little book about Rust programming language in which are some data structures and algorithms plus some practice demos. This book contains 9 chapters.
+A little book about [Rust programming language](https://www.rust-lang.org/) in which are some data structures and algorithms with practice demos.
 
 * Chapter 1: Computer Science
     - Computer science
