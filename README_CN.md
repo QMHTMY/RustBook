@@ -1,4 +1,4 @@
-### 简介 [[English](./README.md),[繁體中文](./README_TW.md)]
+### 简介 [[En](./README.md),[繁](./README_TW.md)]
 一本 [Rust](https://www.rust-lang.org/) 书籍，包括算法分析，基本数据结构和算法，外加一些实战。共有九章，其目录如下。
 
 * 第一章：计算机科学
