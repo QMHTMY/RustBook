@@ -1,6 +1,6 @@
 ### Description  [[简](./README_CN.md),[繁](./README_TW.md)] 
 
-A little book about [Rust programming language](https://www.rust-lang.org/) witten in Chinese. This book contains 9 chapters in which are some data structures and algorithms with practical demos.
+A little book about [Rust programming language](https://www.rust-lang.org/) written in Chinese. This book contains 9 chapters in which are some data structures and algorithms with practical demos.
 
 * Chapter 1: Computer Science
     - Computer science
