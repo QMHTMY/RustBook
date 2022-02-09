@@ -23,6 +23,7 @@
     - 一致性哈希、Base58编码、区块链 
 
 ### 更新日志
+* 2022-02-09 修复单词拼写错误、解决 usize 减法溢出 panic
 * 2022-02-06 更改代码字体为等宽字体：[Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
 * 2022-02-02 更新到 Rust 1.58 版
 * 2022-01-31 上传代码及最终文稿

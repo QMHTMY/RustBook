@@ -24,6 +24,7 @@ A little book about [Rust programming language](https://www.rust-lang.org/) writ
     - Consistent hashing, Base58, Blockchain
 
 ### Change Log 
+* 2022-02-09 fix typo and `substract with overflow` panic
 * 2022-02-06 change code font to monospaced font: [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
 * 2022-02-02 update to rust version 1.58
 * 2022-01-31 upload code and the implementation
