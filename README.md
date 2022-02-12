@@ -1,11 +1,11 @@
-### Description  [[简](./README_CN.md),[繁](./README_TW.md)] 
+### Description  [[简](./README_CN.md)、[繁](./README_TW.md)、[日](./README_JP.md)] 
 
-A little book about [Rust programming language](https://www.rust-lang.org/) written in Chinese. This book contains 9 chapters in which are some data structures and algorithms with practical demos.
+A book about [Rust programming language](https://www.rust-lang.org/) written in Chinese. This book contains 9 chapters in which are some data structures and algorithms with practical demos.
 
 * Chapter 1: Computer Science
     - Computer science
     - Rust review and learning resources
-* Chapter 2: Analysis
+* Chapter 2: Algorithm Analysis
     - Big-O notation
 * Chapter 3: Basic Data Structures
     - Stack, Queue, Deque, List, Vec
