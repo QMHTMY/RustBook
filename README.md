@@ -23,7 +23,26 @@ A little book about [Rust programming language](https://www.rust-lang.org/) writ
     - Edit Distance, Trie, Filter, LRU
     - Consistent hashing, Base58, Blockchain
 
+### Code 
+
+All demo codes are saved by chapter under `code/`.
+
+```
+197 text files.
+148 unique files.
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Rust                           136           1271            469           7137
+TOML                             9             18              8             87
+Bourne Shell                     1              4              1              8
+-------------------------------------------------------------------------------
+SUM:                           146           1293            478           7232
+-------------------------------------------------------------------------------
+```
+
 ### Change Log 
+* 2022-02-12 add code statistics
 * 2022-02-09 fix typo and `substract with overflow` panic
 * 2022-02-06 change code font to monospaced font: [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
 * 2022-02-02 update to rust version 1.58
