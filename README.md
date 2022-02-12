@@ -29,7 +29,7 @@ All demo codes are saved by chapter under `code/`.
 
 ![code_statistics](./code_statistics.png)
 
-### Change Log 
+### Changelog 
 * 2022-02-12 add code statistics
 * 2022-02-09 fix typo and `substract with overflow` panic
 * 2022-02-06 change code font to monospaced font: [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
