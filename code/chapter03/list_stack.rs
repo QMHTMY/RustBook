@@ -22,7 +22,7 @@ impl<T> Node<T> {
 #[derive(Debug, Clone)]
 struct Stack<T> {
     size: usize,
-    top: Option<Box<Node<T>>>, // 栈顶控制整个栈
+    top: Link<T>, // 栈顶控制整个栈
 }
 
 impl<T: Clone> Stack<T> {
