@@ -4,7 +4,7 @@
 #[derive(Debug, Clone)]
 struct Node<T> {
     data: T,
-    next: Option<Box<Node<T>>>, // Node 自包含引用
+    next: Link<T>, // Node 自包含引用
 }
 
 type Link<T> = Option<Box<Node<T>>>;
@@ -13,7 +13,7 @@ impl<T> Node<T> {
     fn new(data: T) -> Self {
         Node {
             data: data,
-            next: None, // 初始化时无下一链接
+            next: None // 初始化时无下一链接
         }
     }
 }
@@ -45,6 +45,7 @@ impl<T: Clone> Stack<T> {
         self.top.take().map(|node| {
             let node = *node;
             self.top = node.next;
+            self.size -= 1;
             node.data
         })
     }
