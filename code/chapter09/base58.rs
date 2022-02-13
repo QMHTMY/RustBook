@@ -2,16 +2,18 @@
 const ALPHABET: &[u8; 58] = b"123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz";
 
 // 进制映射关系
-const BASE58_DIGITS_MAP: &'static [i8] = &[
-    -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
-    -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
-    -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
-    -1, 0, 1, 2, 3, 4, 5, 6, 7, 8,-1,-1,-1,-1,-1,-1,
-    -1, 9,10,11,12,13,14,15,16,-1,17,18,19,20,21,-1,
-    22,23,24,25,26,27,28,29,30,31,32,-1,-1,-1,-1,-1,
-    -1,33,34,35,36,37,38,39,40,41,42,43,-1,44,45,46,
-    47,48,49,50,51,52,53,54,55,56,57,-1,-1,-1,-1,-1,
+const BASE58_DIGITS_MAP: &'static [u8] = &[
+    255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,
+    255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,
+    255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,
+    255,  0,  1,  2,  3,  4,  5,  6,  7,  8,255,255,255,255,255,255,
+    255,  9, 10, 11, 12, 13, 14, 15, 16,255, 17, 18, 19, 20, 21,255,
+     22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32,255,255,255,255,255,
+    255, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43,255, 44, 45, 46,
+     47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57,255,255,255,255,255,
 ];
+// 数前面的 0 用 1 代替
+const ALPHABET_INDEX_0: char = '1';
 
 // 解码错误类型
 #[derive(Debug, PartialEq)]
@@ -62,7 +64,7 @@ impl Encoder for str {
         // 处理多个前置 0
         let mut base58_str = String::new();
         for _ in 0..zero_count {
-            base58_str.push('1');
+            base58_str.push(ALPHABET_INDEX_0);
         }
 
         // 获取编码后的字符并拼接成字符串
@@ -87,7 +89,7 @@ impl Decoder for str {
             _ => 0xffffffff << (bytes_left * 8),
         };
 
-        let zero_count = self.chars().take_while(|&x| x == '1').count();
+        let zero_count = self.chars().take_while(|&x| x == ALPHABET_INDEX_0).count();
         let mut i = zero_count;
         let b58: Vec<u8> = self.bytes().collect();
         while i < self.len() {
@@ -95,7 +97,7 @@ impl Decoder for str {
                 return Err(DecodeError::InvalidCharacter(b58[i] as char, i));
             }
 
-            if BASE58_DIGITS_MAP[b58[i] as usize] == -1 {
+            if BASE58_DIGITS_MAP[b58[i] as usize] == 255 {
                 return Err(DecodeError::InvalidCharacter(b58[i] as char, i));
             }
 
