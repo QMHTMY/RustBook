@@ -28,7 +28,12 @@
 
 ![code_statistics](./code_statistics.png)
 
+### 人気
+
+![star](https://starchart.cc/QMHTMY/RustBook.svg)
+
 ### 変更ログ
+* 2022-02-15 人気チャートを追加する
 * 2022-02-12 コード統計を追加する
 * 2022-02-09 単語のスペルミスを修正し、減算オーバーフローを修正する
 * 2022-02-06 コードフォントを等幅フォントに変更：[Source Code Pro](https://github.com/adobe-fonts/source-code-pro)

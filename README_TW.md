@@ -28,7 +28,12 @@
 
 ![code_statistics](./code_statistics.png)
 
+### 收藏數
+
+![star](https://starchart.cc/QMHTMY/RustBook.svg)
+
 ### 更新日誌
+* 2022-02-15 添加收藏數變化圖
 * 2022-02-12 添加代碼統計信息
 * 2022-02-09 修復單詞拼寫錯誤、解決 usize 減法溢出 panic
 * 2022-02-06 更改代碼字體為等寬字體：[Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
