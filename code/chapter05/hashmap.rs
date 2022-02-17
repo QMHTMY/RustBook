@@ -31,7 +31,7 @@ impl<T: Clone + PartialEq + Default> HashMap<T> {
     }
 
     fn insert(&mut self, key: usize, value: T) {
-        if 0 == key { panic!("Error: key mut > 0"); }
+        if 0 == key { panic!("Error: key must > 0"); }
 
         let pos = self.hash(key);
         if 0 == self.slot[pos] { // 槽无数据直接插入
@@ -42,8 +42,9 @@ impl<T: Clone + PartialEq + Default> HashMap<T> {
             while 0 != self.slot[next]
                 && key != self.slot[next] {
                 next = self.rehash(next);
-                if next == pos {
-                    panic!("Slot is full");
+                if next == pos { // 槽满了就退出
+                    println!("Slot is full");
+                    return;
                 }
             }
 
