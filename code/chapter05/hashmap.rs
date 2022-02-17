@@ -9,9 +9,8 @@ struct HashMap <T> {
 }
 
 impl<T: Clone + PartialEq + Default> HashMap<T> {
-    fn new() -> Self {
+    fn new(size: usize) -> Self {
         // 初始化 slot 和 data
-        let size = 11usize;
         let mut slot = Vec::with_capacity(size);
         let mut data = Vec::with_capacity(size);
         for _i in 0..size {
@@ -43,7 +42,7 @@ impl<T: Clone + PartialEq + Default> HashMap<T> {
                 && key != self.slot[next] {
                 next = self.rehash(next);
                 if next == pos { // 槽满了就退出
-                    println!("Slot is full");
+                    println!("Error: slot is full, quit insertion");
                     return;
                 }
             }
@@ -140,7 +139,7 @@ impl<T: Clone + PartialEq + Default> HashMap<T> {
 }
 
 fn main() {
-    let mut hmap = HashMap::new();
+    let mut hmap = HashMap::new(11);
     hmap.insert(10,"cat");
     hmap.insert(2,"dog");
     hmap.insert(3,"tiget");
