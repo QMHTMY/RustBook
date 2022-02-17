@@ -58,7 +58,7 @@ impl<T: Clone + PartialEq + Default> HashMap<T> {
     }
 
     fn remove(&mut self, key: usize) -> Option<T> {
-        if 0 == key { panic!("Error: key mut > 0"); }
+        if 0 == key { panic!("Error: key must > 0"); }
 
         let pos = self.hash(key);
         if 0 == self.slot[pos] { // 槽中无数据，返回 None
@@ -67,7 +67,6 @@ impl<T: Clone + PartialEq + Default> HashMap<T> {
             self.slot[pos] = 0; // 找到相同 key，更新 slot 和 data
             let data = Some(self.data[pos].clone());
             self.data[pos] = Default::default();
-
             data
         } else {
             let mut data: Option<T>  = None;
@@ -82,9 +81,8 @@ impl<T: Clone + PartialEq + Default> HashMap<T> {
                     data = Some(self.data[curr].clone());
                     self.data[curr] = Default::default();
                 } else {
+                    // 再哈希回到最初位置，说明找了一圈还没有
                     curr = self.rehash(curr);
-
-                    // 再哈希回到了最初位置，说明找了一圈还没有
                     if curr == pos {
                         stop = true;
                     }
@@ -96,7 +94,7 @@ impl<T: Clone + PartialEq + Default> HashMap<T> {
     }
 
     fn get(&self, key: usize) -> Option<&T> {
-        if 0 == key { panic!("Error: key mut > 0"); }
+        if 0 == key { panic!("Error: key must > 0"); }
 
         // 计算数据位置
         let pos = self.hash(key);
@@ -111,6 +109,7 @@ impl<T: Clone + PartialEq + Default> HashMap<T> {
                 found = true;
                 data = self.data.get(curr);
             } else {
+                // 再哈希回到最初位置，说明找了一圈还没有
                 curr = self.rehash(curr);
                 if curr == pos {
                     stop = true;
@@ -122,7 +121,7 @@ impl<T: Clone + PartialEq + Default> HashMap<T> {
     }
 
     fn contains(&self, key: usize) -> bool {
-        if 0 == key { panic!("Error: key mut > 0"); }
+        if 0 == key { panic!("Error: key must > 0"); }
         self.slot.contains(&key)
     }
 
