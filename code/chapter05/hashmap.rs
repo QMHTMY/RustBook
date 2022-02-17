@@ -42,6 +42,9 @@ impl<T: Clone + PartialEq + Default> HashMap<T> {
             while 0 != self.slot[next]
                 && key != self.slot[next] {
                 next = self.rehash(next);
+                if next == pos {
+                    panic!("Slot is full");
+                }
             }
 
             // 在找到的槽插入数据
