@@ -197,8 +197,8 @@ fn main() {
     println!("{:#?}","ZiCa".decode_from_base58().unwrap());
 
     println!("{:#?}","我爱你".encode_to_base58());
-    println!("{:#?}","3wCHf2LRNuMmh".decode_from_base58().unwrap());
+    println!("{:#?}","3wCHf2LRNuMmh".decode_from_base58());
 
     println!("{:#?}","我愛你".encode_to_base58());
-    println!("{:#?}","3wCHf1q5U5pUP".decode_from_base58().unwrap());
+    println!("{:#?}","3wCHf1q5U5pUP".decode_from_base58());
 }
