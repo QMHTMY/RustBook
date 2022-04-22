@@ -43,7 +43,7 @@ impl<T> Deque<T> {
 }
 
 // 回文检查
-fn pal_checker(pal: &str) -> bool {
+fn palindrome_checker(pal: &str) -> bool {
     let mut d = Deque::new(pal.len());
     for c in pal.chars() {
         let _r = d.add_rear(c); // 数据入队列
@@ -63,6 +63,6 @@ fn pal_checker(pal: &str) -> bool {
 
 fn main() {
     let pal = "rustsur";
-    let is_pal = pal_checker(pal);
+    let is_pal = palindrome_checker(pal);
     println!("{pal} is palindrome string: {is_pal}");
 }

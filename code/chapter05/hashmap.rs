@@ -42,7 +42,7 @@ impl<T: Clone + PartialEq + Default> HashMap<T> {
                 && key != self.slot[next] {
                 next = self.rehash(next);
                 if next == pos { // 槽满了就退出
-                    println!("Error: slot is full, quit insertion");
+                    println!("Error: slot is full!");
                     return;
                 }
             }

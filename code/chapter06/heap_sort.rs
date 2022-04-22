@@ -7,29 +7,29 @@ macro_rules! parent { // 计算父节点下标宏
 }
 macro_rules! left_child { // 计算左子节点下标宏
     ($parent:ident) => {
-        ($parent << 1) + 1
+        $parent << 1
     };
 }
 macro_rules! right_child { // 计算右子节点下标宏
     ($parent:ident) => {
-        ($parent + 1) << 1
+        ($parent << 1) + 1
     };
 }
 
 fn heap_sort(nums: &mut [i32]) {
-    if nums.len() <= 1 {
+    if nums.len() < 2 {
         return;
     }
 
-    let len = nums.len();
+    let len = nums.len() - 1;
     let last_parent = parent!(len);
-    for i in (0..=last_parent).rev() {
+    for i in (1..=last_parent).rev() {
         move_down(nums, i); // 第一次建小顶堆
     }
 
     for end in (1..nums.len()).rev() {
-        nums.swap(0, end);
-        move_down(&mut nums[..end], 0); // 重建堆
+        nums.swap(1, end);
+        move_down(&mut nums[..end], 1); // 重建堆
     }
 }
 
@@ -61,7 +61,7 @@ fn move_down(nums: &mut [i32], mut parent: usize) {
 }
 
 fn main() {
-    let mut nums = [54,32,99,18,75,31,43,56,21,22];
+    let mut nums = [0,54,32,99,18,75,31,43,56,21,22];
     heap_sort(&mut nums);
     println!("sorted nums: {:?}", nums);
 }
