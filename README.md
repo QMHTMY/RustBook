@@ -34,6 +34,7 @@ All demo codes are saved by chapter under `code/`.
 ![star](https://starchart.cc/QMHTMY/RustBook.svg)
 
 ### Changelog 
+* 2022-05-15 add a new directory `publication`
 * 2022-02-27 change the book cover
 * 2022-02-15 add stargazer chart
 * 2022-02-12 add code statistics

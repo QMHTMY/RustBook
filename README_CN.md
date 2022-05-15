@@ -33,6 +33,7 @@
 ![star](https://starchart.cc/QMHTMY/RustBook.svg)
 
 ### 更新日志
+* 2022-05-15 添加新目录 `publication`
 * 2022-02-27 更换书籍封面
 * 2022-02-15 添加收藏数变化图
 * 2022-02-12 添加代码统计信息
