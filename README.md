@@ -37,7 +37,7 @@ All demo codes are saved by chapter under `publication/code/`.
 -->
 
 ### Changelog 
-* 2023-04-29 add the english version book
+* 2023-04-29 add english version of the book
 * 2022-05-15 add a new directory `publication`
 * 2022-02-27 change the book cover
 * 2022-02-15 add stargazer chart
@@ -45,5 +45,5 @@ All demo codes are saved by chapter under `publication/code/`.
 * 2022-02-09 fix typo and `substract with overflow` panic
 * 2022-02-06 change code font to monospaced font: [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
 * 2022-02-02 update to rust version 1.58
-* 2022-01-31 upload code and the implementation
+* 2022-01-31 upload code and the implementation [Simplified and Traditional Chinese Version]
 * 2021-04-24 upload first draft
