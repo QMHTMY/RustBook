@@ -1,39 +1,43 @@
-### Description  [[简](./README_CN.md)、[繁](./README_TW.md)、[日](./README_JP.md)] 
+### Description  [[简](./README_CN.md)、[繁](./README_TW.md)] 
 
-A book about [Rust programming language](https://www.rust-lang.org/) written in Simplified and Tranditional Chinese (English and Japanese versions are planned). This book contains 9 chapters in which are some data structures and algorithms with practical demos.
+A book about [Rust programming language](https://www.rust-lang.org/) written in Simplified, Tranditional Chinese and English(80%). This book contains 10 chapters in which are some data structures and algorithms with demos.
 
-* Chapter 1: Computer Science
-    - Computer science
-    - Rust review and learning resources
-* Chapter 2: Algorithm Analysis
+* Chapter 1: Rust basic
+    - Review of Rust fundamentals
+    - Learning resources
+* Chapter 2: Computer Science
+    - Computer science concepts
+* Chapter 3: Algorithm Analysis
     - Big-O notation
-* Chapter 3: Basic Data Structures
+* Chapter 4: Basic Data Structures
     - Stack, Queue, Deque, List, Vec
-* Chapter 4: Recursion
+* Chapter 5: Recursion
     - Recursion theory, Tail-recursion  ,Dynamic programming
-* Chapter 5: Search
+* Chapter 6: Search
     - Sequencial search, Binary search, Hashing search
-* Chapter 6: Sort
+* Chapter 7: Sort
     - Ten basic sort algorithms
-* Chapter 7: Tree
+* Chapter 8: Tree
     - Binary tree, Binary heap, Binary search tree, AVL tree
-* Chapter 8: Graph
+* Chapter 9: Graph
     - Graph representation, BFS, DFS, Shortest path
-* Chapter 9: Practice
+* Chapter 10: Practice
     - Edit Distance, Trie, Filter, LRU
     - Consistent hashing, Base58, Blockchain
 
 ### Code 
 
-All demo codes are saved by chapter under `code/`.
+All demo codes are saved by chapter under `publication/code/`.
 
 ![code_statistics](./code_statistics.png)
 
-### Stargazer
+<!-- ### Stargazer
 
 ![star](https://starchart.cc/QMHTMY/RustBook.svg)
+-->
 
 ### Changelog 
+* 2023-04-29 add the english version book
 * 2022-05-15 add a new directory `publication`
 * 2022-02-27 change the book cover
 * 2022-02-15 add stargazer chart
