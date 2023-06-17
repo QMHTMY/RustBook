@@ -47,3 +47,8 @@ All demo codes are saved by chapter under `publication/code/`.
 * 2022-02-02 update to rust version 1.58
 * 2022-01-31 upload code and the implementation [Simplified and Traditional Chinese Version]
 * 2021-04-24 upload first draft
+
+### Publish
+Now, there is a published version of Chinese available. [<a href="https://item.jd.com/14028670.html" target="_blank">Purchase URL</a>]
+
+![PublishCover](./RustPublishCover.jpg)
