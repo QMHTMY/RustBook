@@ -37,6 +37,7 @@ All demo codes are saved by chapter under `publication/code/`.
 -->
 
 ### Changelog 
+* 2023-06-18 add publish edition info
 * 2023-04-29 add english version of the book
 * 2022-05-15 add a new directory `publication`
 * 2022-02-27 change the book cover
