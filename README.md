@@ -49,7 +49,7 @@ All demo codes are saved by chapter under `publication/code/`.
 * 2022-01-31 upload code and the implementation [Simplified and Traditional Chinese Version]
 * 2021-04-24 upload first draft
 
-### Publish
+### Publication
 Now, Chinese edition has been published with 40% more content than the open source book. [<a href="https://item.jd.com/14028670.html" target="_blank">Purchase URL</a>]
 
 ![PublishCover](./RustPublishCover.jpg)
