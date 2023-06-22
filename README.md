@@ -1,6 +1,6 @@
 ### Publication
 
-Now, Chinese edition has been published with 40% more content than the open source book. [<a href="https://item.jd.com/14028670.html" target="_blank">Purchase URL</a>]
+Now, Chinese edition has been published with 40% more contents than the open-sourced one. [<a href="https://item.jd.com/14028670.html" target="_blank">Purchase URL</a>]
 
 ![PublishCover](./RustPublishCover.jpg)
 
