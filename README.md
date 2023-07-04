@@ -1,9 +1,3 @@
-### Publication
-
-Now, Chinese edition has been published with 40% more contents than the open-sourced one. [<a href="https://item.jd.com/14028670.html" target="_blank">Purchase URL</a>]
-
-![PublishCover](./RustPublishCover.jpg)
-
 ### Description  [[简](./README_CN.md)、[繁](./README_TW.md)] 
 
 A book about [Rust programming language](https://www.rust-lang.org/) written in Simplified, Tranditional Chinese and English(80%). This book contains 10 chapters in which are some data structures and algorithms with demos.
@@ -54,3 +48,10 @@ All demo codes are saved by chapter under `publication/code/`.
 * 2022-02-02 update to rust version 1.58
 * 2022-01-31 upload code and the implementation [Simplified and Traditional Chinese Version]
 * 2021-04-24 upload first draft
+
+### Publication
+
+Now, Chinese edition has been published with 40% more contents than the open-sourced one.
+
+![PublishCover](./RustPublishCover.jpg)
+
