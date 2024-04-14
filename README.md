@@ -1,6 +1,6 @@
 ### Description  [[简](./README_CN.md)、[繁](./README_TW.md)] 
 
-A book about [Rust programming language](https://www.rust-lang.org/) written in Simplified, Tranditional Chinese and English(80%). This book contains 10 chapters in which are some data structures and algorithms with demos.
+A book about [Rust programming language](https://www.rust-lang.org/) written in Simplified, Tranditional Chinese and English. This book contains 10 chapters in which are some data structures and algorithms with demos.
 
 * Chapter 1: Rust basic
     - Review of Rust fundamentals
