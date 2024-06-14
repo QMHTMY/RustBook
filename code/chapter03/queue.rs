@@ -17,7 +17,7 @@ impl<T> Queue<T> {
 
     // 判断是否有剩余空间、有则数据加入队列
     fn enqueue(&mut self, val: T) -> Result<(), String> {
-        if Self::size(&self) == self.cap {
+        if self.size() == self.cap {
             return Err("No space available".to_string());
         }
         self.data.insert(0, val);
